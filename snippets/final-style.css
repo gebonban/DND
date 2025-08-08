@@ -1,0 +1,17 @@
+.final-position {
+  display: block;
+  margin: 1em auto;
+  text-align: center;
+}
+.final-position svg {
+  width: 800px !important;
+  height: 800px !important;
+}
+
+.dataview table th {
+  background: #efefef;
+  text-align: center;
+}
+.dataview table td {
+  text-align: center;
+}

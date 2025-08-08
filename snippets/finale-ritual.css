@@ -1,0 +1,96 @@
+/* --- БАЗОВОЕ ОФОРМЛЕНИЕ --- */
+.theme-dark .markdown-preview-view.markdown-preview-sizer .finale-ritual {
+  background: linear-gradient(135deg, #1a1c29, #10111b);
+  color: #e0e0e8;
+  font-family: 'EB Garamond', serif;
+  padding: 1.5em;
+  border-radius: 12px;
+}
+
+/* Заголовки */
+.finale-ritual h1,
+.finale-ritual h2,
+.finale-ritual h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #ffdd99;
+  margin-bottom: 0.5em;
+  text-shadow: 0 0 4px rgba(255, 221, 153, 0.6);
+}
+
+/* Цитата-лозунг */
+.finale-ritual blockquote {
+  border-left: 4px solid #ffdd99;
+  padding-left: 1em;
+  margin: 1em 0;
+  font-style: italic;
+  background: rgba(255, 221, 153, 0.05);
+  color: #f0e6d2;
+}
+
+/* --- КНОПКИ --- */
+.finale-ritual .btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6em;
+  margin: 1em 0 1.5em;
+}
+.finale-ritual .btn {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .1s, box-shadow .2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.finale-ritual .btn.green   { background: #2e8b57; }
+.finale-ritual .btn.gold    { background: #daa520; }
+.finale-ritual .btn.red     { background: #b22222; }
+.finale-ritual .btn.purple  { background: #6a5acd; }
+.finale-ritual .btn.gray    { background: #444; }
+.finale-ritual .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* --- ТАБЛИЦА --- */
+.finale-ritual .dataview table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+.finale-ritual .dataview th,
+.finale-ritual .dataview td {
+  padding: 0.6em 0.8em;
+  text-align: center;
+}
+.finale-ritual .dataview th {
+  background: rgba(255, 221, 153, 0.2);
+  color: #ffeebb;
+}
+.finale-ritual .dataview tr:nth-child(even) {
+  background: rgba(255,255,255,0.03);
+}
+
+/* --- CALLOUT’Ы --- */
+.finale-ritual .callout {
+  padding: 1em;
+  border-left: 4px solid;
+  border-radius: 4px;
+  margin: 0.5em 0;
+}
+.finale-ritual .callout-success { background: rgba(50, 100, 50, 0.2); border-color: #2e8b57; }
+.finale-ritual .callout-tip     { background: rgba(170, 135, 50, 0.2); border-color: #daa520; }
+.finale-ritual .callout-warning { background: rgba(170, 50, 50, 0.2); border-color: #b22222; }
+.finale-ritual .callout-danger  { background: rgba(100, 50, 170, 0.2); border-color: #6a5acd; }
+
+/* --- РОМБ ФИНАЛА --- */
+.finale-ritual .final-position {
+  text-align: center;
+  margin: 2em 0;
+}
+.finale-ritual .final-position svg {
+  max-width: 350px;
+  height: auto;
+  filter: drop-shadow(0 0 4px rgba(0, 122, 204, 0.8));
+}

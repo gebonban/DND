@@ -1,0 +1,358 @@
+/* Импорт шрифтов Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Основные шрифты и фон */
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #2d3748;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+}
+
+/* Заголовки в стиле D&D PHB */
+h1, .markdown-preview-view h1 {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #742a2a;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  margin-bottom: 0.8em;
+  margin-top: 0.5em;
+  border-bottom: 3px solid #c53030;
+  padding-bottom: 0.3em;
+  letter-spacing: 0.05em;
+}
+
+h2, .markdown-preview-view h2 {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.9em;
+  font-weight: 600;
+  color: #742a2a;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+  border-left: 4px solid #c53030;
+  padding-left: 0.8em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h3, .markdown-preview-view h3 {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #742a2a;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.2em;
+}
+
+/* Двухколоночный макет с улучшенным дизайном */
+.markdown-preview-view .column-container {
+  display: flex;
+  gap: 3em;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 2.5em;
+  border: 1px solid #e2e8f0;
+}
+
+.markdown-preview-view .column-left,
+.markdown-preview-view .column-right {
+  width: 50%;
+}
+
+.column-right {
+  border-left: 2px solid #e2e8f0;
+  padding-left: 2em;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 8px;
+  margin-left: 1em;
+}
+
+/* Улучшенные Callout-блоки */
+.markdown-preview-view .callout-tip {
+  background: linear-gradient(135deg, #f0fff4 0%, #dcfce7 100%);
+  border-left: 5px solid #22c55e;
+  border-radius: 8px;
+  padding: 1.2em;
+  margin: 1em 0;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1);
+}
+
+.markdown-preview-view .callout-warning {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border-left: 5px solid #f59e0b;
+  border-radius: 8px;
+  padding: 1.2em;
+  margin: 1em 0;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.1);
+}
+
+.markdown-preview-view .callout-danger {
+  background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+  border-left: 5px solid #ef4444;
+  border-radius: 8px;
+  padding: 1.2em;
+  margin: 1em 0;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.1);
+}
+
+/* Стильные таблицы в стиле D&D */
+.markdown-preview-view table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.markdown-preview-view table th {
+  background: linear-gradient(135deg, #065f46 0%, #047857 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+  font-weight: 600;
+  font-family: "Cinzel", serif;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  border-bottom: 2px solid #064e3b;
+}
+
+.markdown-preview-view table td {
+  padding: 0.8em 1em;
+  border-bottom: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.markdown-preview-view table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.markdown-preview-view table tbody tr:hover {
+  background: #f1f5f9;
+  transition: background 0.2s ease;
+}
+
+/* Изображения-свитки с улучшенным дизайном */
+.scroll-image {
+  display: block;
+  margin: 1.5em auto;
+  padding: 1em;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 2px solid #dee2e6;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  max-width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scroll-image:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Улучшенные кнопки в стиле D&D */
+.markdown-preview-view button {
+  background: linear-gradient(135deg, #065f46 0%, #047857 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8em 1.5em;
+  margin: 0.5em 0.5em 0.5em 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.95em;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(6, 95, 70, 0.3);
+}
+
+.markdown-preview-view button:hover {
+  background: linear-gradient(135deg, #047857 0%, #065f46 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(6, 95, 70, 0.4);
+}
+
+.markdown-preview-view button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(6, 95, 70, 0.3);
+}
+
+/* Кнопки сброса */
+.markdown-preview-view button:contains("🔄") {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3);
+}
+
+.markdown-preview-view button:contains("🔄"):hover {
+  background: linear-gradient(135deg, #b91c1c 0%, #dc2626 100%);
+  box-shadow: 0 6px 12px rgba(220, 38, 38, 0.4);
+}
+
+/* Стили для результатов действий */
+.action-result, .ending-result {
+  background: linear-gradient(135deg, #f0fff4 0%, #dcfce7 100%);
+  border-left: 4px solid #22c55e;
+  padding: 1em;
+  margin: 0.8em 0;
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.1);
+  border: 1px solid #bbf7d0;
+}
+
+/* Общие стили для всех заметок */
+.markdown-preview-view {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  padding: 2em;
+  font-family: "Open Sans", sans-serif;
+  color: #2d3748;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Улучшенные стили для кода */
+.markdown-preview-view code {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 0.3em 0.6em;
+  border-radius: 6px;
+  font-family: "Courier New", "Monaco", monospace;
+  font-size: 0.9em;
+  border: 1px solid #4a5568;
+}
+
+.markdown-preview-view pre {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 1.5em;
+  border-radius: 8px;
+  overflow-x: auto;
+  border: 1px solid #4a5568;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Стили для ссылок */
+.markdown-preview-view a {
+  color: #3182ce;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.markdown-preview-view a:hover {
+  color: #2c5282;
+  border-bottom: 1px solid #2c5282;
+}
+
+/* Улучшенные списки */
+.markdown-preview-view ul, .markdown-preview-view ol {
+  padding-left: 1.8em;
+  margin: 1em 0;
+}
+
+.markdown-preview-view li {
+  margin: 0.5em 0;
+  line-height: 1.6;
+}
+
+.markdown-preview-view ul li::marker {
+  color: #742a2a;
+  font-weight: bold;
+}
+
+/* Стили для цитат */
+.markdown-preview-view blockquote {
+  border-left: 4px solid #742a2a;
+  padding: 1.5em;
+  margin: 1.5em 0;
+  font-style: italic;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.markdown-preview-view blockquote::before {
+  content: '"';
+  font-size: 3em;
+  color: #742a2a;
+  position: absolute;
+  top: -0.2em;
+  left: 0.3em;
+  opacity: 0.3;
+}
+
+/* Стили для параграфов */
+.markdown-preview-view p {
+  margin: 1em 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Стили для выделенного текста */
+.markdown-preview-view strong {
+  color: #742a2a;
+  font-weight: 600;
+}
+
+.markdown-preview-view em {
+  color: #4a5568;
+  font-style: italic;
+}
+
+/* Стили для горизонтальных линий */
+.markdown-preview-view hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, #742a2a 50%, transparent 100%);
+  margin: 2em 0;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .markdown-preview-view .column-container {
+    flex-direction: column;
+    gap: 2em;
+    padding: 1.5em;
+  }
+  
+  .markdown-preview-view .column-left,
+  .markdown-preview-view .column-right {
+    width: 100%;
+  }
+  
+  .column-right {
+    border-left: none;
+    border-top: 2px solid #e2e8f0;
+    padding-left: 0;
+    padding-top: 1em;
+    margin-left: 0;
+  }
+  
+  h1, .markdown-preview-view h1 {
+    font-size: 2em;
+  }
+  
+  h2, .markdown-preview-view h2 {
+    font-size: 1.6em;
+  }
+}
+
+/* Нумерация страниц при экспорте PDF */
+@page {
+  @bottom-center {
+    content: counter(page);
+    font-style: italic;
+    font-size: 0.8em;
+    color: #6b7280;
+    font-family: "Cinzel", serif;
+  }
+} 

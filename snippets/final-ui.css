@@ -1,0 +1,10 @@
+.btn-row { display:flex; flex-wrap:wrap; gap:0.5em; margin-bottom:1em; }
+.btn { padding:0.4em 0.8em; border:none; border-radius:4px; color:#fff; cursor:pointer; }
+.green  { background:#2e8b57 }
+.gold   { background:#daa520 }
+.red    { background:#b22222 }
+.purple { background:#6a5acd }
+.gray   { background:#555 }
+.btn:hover { opacity:0.8 }
+.final-position { text-align:center; margin-top:1em; }
+.final-position svg { max-width:600px; height:auto; }

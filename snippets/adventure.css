@@ -1,0 +1,106 @@
+/* Универсальные стили для всех заметок */
+.markdown-preview-view {
+  background: #fffbe6;
+  border-left: 6px solid #ffbe0b;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.markdown-preview-view h1 {
+  color: #ff006e;
+  font-family: 'Georgia', serif;
+}
+
+.markdown-preview-view h2 {
+  color: #8338ec;
+}
+
+/* Стили для кнопок */
+.markdown-preview-view button {
+  background: #ffbe0b;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.markdown-preview-view button:hover {
+  background: #ff006e;
+  color: #fff;
+}
+
+/* Специальные стили для кнопок сброса */
+.markdown-preview-view button:contains("🔄") {
+  background: #ff6b6b;
+  color: #fff;
+  border: 2px solid #ff4757;
+}
+
+.markdown-preview-view button:contains("🔄"):hover {
+  background: #ff4757;
+}
+
+/* Стили для результатов действий */
+.action-result, .ending-result {
+  background: #e8f5e8;
+  border-left: 4px solid #4caf50;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 4px;
+}
+
+/* Стили для adventure-класса (если нужно особое оформление) */
+.adventure {
+  background: #fffbe6;
+  border-left: 6px solid #ffbe0b;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.adventure h1 {
+  color: #ff006e;
+  font-family: 'Georgia', serif;
+}
+
+.adventure h2 {
+  color: #8338ec;
+}
+
+.adventure button {
+  background: #ffbe0b;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.adventure button:hover {
+  background: #ff006e;
+  color: #fff;
+}
+
+.adventure button:contains("🔄") {
+  background: #ff6b6b;
+  color: #fff;
+  border: 2px solid #ff4757;
+}
+
+.adventure button:contains("🔄"):hover {
+  background: #ff4757;
+}
+
+.adventure .action-result, .adventure .ending-result {
+  background: #e8f5e8;
+  border-left: 4px solid #4caf50;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border-radius: 4px;
+}

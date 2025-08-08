@@ -1,0 +1,30 @@
+.scenario-story {
+  background: #191b26;
+  color: #d1d4dd;
+  padding: 2em;
+  border-radius: 10px;
+  font-family: 'Merriweather', serif;
+}
+.scenario-story h1,
+.scenario-story h2,
+.scenario-story h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #f0d47d;
+  text-shadow: 0 0 4px rgba(240, 212, 125, 0.6);
+}
+.scenario-story blockquote {
+  border-left: 4px solid #f0d47d;
+  background: rgba(240,212,125,0.05);
+  padding: 0.8em;
+  margin: 1em 0;
+}
+.scenario-story .btn-row {
+  display: flex; flex-wrap: wrap; gap: 0.6em; margin: 1em 0;
+}
+.scenario-story .btn {
+  background: #2e8b57; color: #fff; border:none;
+  padding: 0.5em 1em; border-radius:6px; cursor:pointer;
+  font-weight:bold; transition:transform .1s, box-shadow .2s;
+  box-shadow:0 2px 6px rgba(0,0,0,0.4);
+}
+.scenario-story .btn:hover { transform: translateY(-2px); }

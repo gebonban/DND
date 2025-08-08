@@ -1,0 +1,674 @@
+/* ===== ПАНТЕОН СТИЛИ - СОВРЕМЕННЫЙ ДИЗАЙН ===== */
+
+/* Основные настройки */
+.markdown-preview-view {
+  background: #faf8f5;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.markdown-preview-view .markdown-preview-sizer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Декоративные элементы по бокам */
+.markdown-preview-view .markdown-preview-sizer::before,
+.markdown-preview-view .markdown-preview-sizer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background: linear-gradient(180deg, #8B4513 0%, #A0522D 50%, #8B4513 100%);
+  opacity: 0.1;
+  border-radius: 10px;
+}
+
+.markdown-preview-view .markdown-preview-sizer::before {
+  left: -30px;
+  background-image: 
+    radial-gradient(circle at 20px 50px, #8B4513 2px, transparent 2px),
+    radial-gradient(circle at 40px 150px, #8B4513 1px, transparent 1px),
+    radial-gradient(circle at 30px 250px, #8B4513 1.5px, transparent 1.5px);
+}
+
+.markdown-preview-view .markdown-preview-sizer::after {
+  right: -30px;
+  background-image: 
+    radial-gradient(circle at 40px 100px, #8B4513 1.5px, transparent 1.5px),
+    radial-gradient(circle at 20px 200px, #8B4513 2px, transparent 2px),
+    radial-gradient(circle at 35px 300px, #8B4513 1px, transparent 1px);
+}
+
+/* Заголовки */
+.markdown-preview-view h1 {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #495057;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: 300;
+  margin: 0 0 40px 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  border: 1px solid #dee2e6;
+  position: relative;
+}
+
+.markdown-preview-view h1::before {
+  content: "🏛️";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+.markdown-preview-view h2 {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #495057;
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin: 35px 0 20px 0;
+  font-size: 1.8em;
+  font-weight: 400;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  border: 1px solid #e9ecef;
+  border-left: 4px solid #6c757d;
+}
+
+.markdown-preview-view h3 {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  color: #495057;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 25px 0 15px 0;
+  font-size: 1.4em;
+  font-weight: 500;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  border: 1px solid #f1f3f4;
+}
+
+.markdown-preview-view h4 {
+  background: #ffffff;
+  color: #495057;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin: 20px 0 12px 0;
+  font-size: 1.2em;
+  font-weight: 500;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.02);
+  border: 1px solid #f8f9fa;
+}
+
+/* Цитаты */
+.markdown-preview-view blockquote {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #495057;
+  border-left: 4px solid #6c757d;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 25px 0;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  font-style: italic;
+  font-size: 1.1em;
+  border: 1px solid #dee2e6;
+}
+
+/* Таблицы */
+.markdown-preview-view table {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  margin: 25px 0;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #e9ecef;
+}
+
+.markdown-preview-view th {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+  padding: 18px 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.1em;
+  border-bottom: 2px solid #495057;
+}
+
+.markdown-preview-view td {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f1f3f4;
+  transition: all 0.3s ease;
+  color: #495057;
+}
+
+.markdown-preview-view tr:hover td {
+  background: #f8f9fa;
+  transform: translateX(2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Ссылки на богов */
+.markdown-preview-view a[data-href*="Gods"] {
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
+  color: #495057;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid #ced4da;
+  display: inline-block;
+  margin: 2px;
+}
+
+.markdown-preview-view a[data-href*="Gods"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #dee2e6 0%, #ced4da 100%);
+  color: #212529;
+}
+
+/* Специальные блоки */
+.markdown-preview-view .callout {
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  margin: 25px 0;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+}
+
+.markdown-preview-view .callout-title {
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 18px 25px;
+  color: #495057;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.markdown-preview-view .callout-content {
+  padding: 25px;
+  background: #ffffff;
+}
+
+/* Стили для разных типов callout */
+.markdown-preview-view .callout[data-callout="quote"] {
+  background: #ffffff;
+  border-left: 4px solid #6c757d;
+}
+
+.markdown-preview-view .callout[data-callout="tip"] {
+  background: #ffffff;
+  border-left: 4px solid #28a745;
+}
+
+.markdown-preview-view .callout[data-callout="warning"] {
+  background: #ffffff;
+  border-left: 4px solid #ffc107;
+}
+
+.markdown-preview-view .callout[data-callout="danger"] {
+  background: #ffffff;
+  border-left: 4px solid #dc3545;
+}
+
+/* Mermaid диаграммы - исправленная версия */
+.markdown-preview-view .mermaid {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 25px 0;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  border: 1px solid #e9ecef;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Dataview таблицы */
+.markdown-preview-view .dataview {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  margin: 25px 0;
+  border: 1px solid #e9ecef;
+}
+
+.markdown-preview-view .dataview table {
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  border: none;
+}
+
+.markdown-preview-view .dataview th {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+  padding: 18px 20px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.1em;
+  border-bottom: 2px solid #495057;
+}
+
+.markdown-preview-view .dataview td {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-bottom: 1px solid #f1f3f4;
+  transition: all 0.3s ease;
+  color: #495057;
+}
+
+.markdown-preview-view .dataview tr:hover td {
+  background: #f8f9fa;
+  transform: translateX(2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Специальные стили для карточек богов */
+.pantheon-chart {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  border: 1px solid #dee2e6;
+}
+
+.chart-title {
+  color: #495057;
+  font-size: 1.6em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.god-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  border-left: 4px solid;
+}
+
+.god-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.god-name {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #495057;
+}
+
+.god-rank {
+  font-size: 0.95em;
+  color: #6c757d;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.god-pantheon {
+  font-size: 0.85em;
+  color: #868e96;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Цвета для разных домов */
+.god-card.дом-света {
+  border-left-color: #ffc107;
+  background: linear-gradient(135deg, rgba(255,193,7,0.05) 0%, #ffffff 100%);
+}
+
+.god-card.дом-тьмы {
+  border-left-color: #6f42c1;
+  background: linear-gradient(135deg, rgba(111,66,193,0.05) 0%, #ffffff 100%);
+}
+
+.god-card.дом-хаоса {
+  border-left-color: #fd7e14;
+  background: linear-gradient(135deg, rgba(253,126,20,0.05) 0%, #ffffff 100%);
+}
+
+/* Цвета для разных рангов */
+.god-card.первозданное-божество {
+  box-shadow: 0 5px 20px rgba(220,53,69,0.15);
+}
+
+.god-card.верховное-божество {
+  box-shadow: 0 5px 20px rgba(255,193,7,0.15);
+}
+
+.god-card.божество {
+  box-shadow: 0 5px 20px rgba(40,167,69,0.15);
+}
+
+.god-card.низшее-божество {
+  box-shadow: 0 5px 20px rgba(13,110,253,0.15);
+}
+
+.god-card.полу-бог {
+  box-shadow: 0 5px 20px rgba(108,117,125,0.15);
+}
+
+/* Списки */
+.markdown-preview-view ul, .markdown-preview-view ol {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px 40px;
+  margin: 20px 0;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  border: 1px solid #e9ecef;
+}
+
+.markdown-preview-view li {
+  margin: 10px 0;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  color: #495057;
+}
+
+.markdown-preview-view li:hover {
+  background: #f8f9fa;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: #212529;
+}
+
+/* Код блоки */
+.markdown-preview-view code {
+  background: #f8f9fa;
+  color: #495057;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  border: 1px solid #e9ecef;
+}
+
+.markdown-preview-view pre {
+  background: #f8f9fa;
+  color: #495057;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  overflow-x: auto;
+  border: 1px solid #e9ecef;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .chart-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .markdown-preview-view h1 {
+    font-size: 2.2em;
+    padding: 20px;
+  }
+  
+  .markdown-preview-view h2 {
+    font-size: 1.6em;
+    padding: 15px 20px;
+  }
+  
+  .pantheon-chart {
+    padding: 20px;
+  }
+  
+  .markdown-preview-view .markdown-preview-sizer {
+    padding: 20px 15px;
+  }
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view table,
+.markdown-preview-view .callout,
+.markdown-preview-view .pantheon-chart {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Дополнительные эффекты */
+.markdown-preview-view h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #6c757d, #495057);
+  border-radius: 2px;
+}
+
+/* Стили для кнопок и интерактивных элементов */
+.markdown-preview-view button,
+.markdown-preview-view .button {
+  background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.markdown-preview-view button:hover,
+.markdown-preview-view .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Стили для разделителей */
+.markdown-preview-view hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e9ecef, transparent);
+  margin: 40px 0;
+}
+
+/* ===== УНИКАЛЬНЫЕ СТИЛИ ДЛЯ БОГОВ ===== */
+
+/* Дом Света - Светлое оформление */
+.markdown-preview-view[data-path*="Орамей"],
+.markdown-preview-view[data-path*="Властитель"] {
+  background: linear-gradient(135deg, #fff8e1 0%, #fffde7 100%);
+}
+
+.markdown-preview-view[data-path*="Орамей"] .markdown-preview-sizer,
+.markdown-preview-view[data-path*="Властитель"] .markdown-preview-sizer {
+  background: linear-gradient(135deg, #ffffff 0%, #fff8e1 100%);
+  border: 2px solid #ffd54f;
+  box-shadow: 0 15px 50px rgba(255,193,7,0.15);
+}
+
+.markdown-preview-view[data-path*="Орамей"] h1,
+.markdown-preview-view[data-path*="Властитель"] h1 {
+  background: linear-gradient(135deg, #ffd54f 0%, #ffb300 100%);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  border: 2px solid #ff8f00;
+}
+
+.markdown-preview-view[data-path*="Орамей"] h1::before,
+.markdown-preview-view[data-path*="Властитель"] h1::before {
+  content: "☀️";
+  color: #ffffff;
+}
+
+.markdown-preview-view[data-path*="Орамей"] h2,
+.markdown-preview-view[data-path*="Властитель"] h2 {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  border-left: 4px solid #ffd54f;
+  color: #e65100;
+}
+
+.markdown-preview-view[data-path*="Орамей"] blockquote,
+.markdown-preview-view[data-path*="Властитель"] blockquote {
+  background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+  border-left: 4px solid #ffd54f;
+  color: #e65100;
+}
+
+/* Дом Тьмы - Темное оформление */
+.markdown-preview-view[data-path*="Налла"],
+.markdown-preview-view[data-path*="Сетилат"] {
+  background: linear-gradient(135deg, #2d1b69 0%, #1a1a2e 100%);
+  color: #e8eaf6;
+}
+
+.markdown-preview-view[data-path*="Налла"] .markdown-preview-sizer,
+.markdown-preview-view[data-path*="Сетилат"] .markdown-preview-sizer {
+  background: linear-gradient(135deg, #3f2b96 0%, #2d1b69 100%);
+  border: 2px solid #9c27b0;
+  box-shadow: 0 15px 50px rgba(156,39,176,0.3);
+}
+
+.markdown-preview-view[data-path*="Налла"] h1,
+.markdown-preview-view[data-path*="Сетилат"] h1 {
+  background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  border: 2px solid #4a148c;
+}
+
+.markdown-preview-view[data-path*="Налла"] h1::before,
+.markdown-preview-view[data-path*="Сетилат"] h1::before {
+  content: "🌙";
+  color: #ffffff;
+}
+
+.markdown-preview-view[data-path*="Налла"] h2,
+.markdown-preview-view[data-path*="Сетилат"] h2 {
+  background: linear-gradient(135deg, #4a148c 0%, #311b92 100%);
+  border-left: 4px solid #9c27b0;
+  color: #e8eaf6;
+}
+
+.markdown-preview-view[data-path*="Налла"] blockquote,
+.markdown-preview-view[data-path*="Сетилат"] blockquote {
+  background: linear-gradient(135deg, #4a148c 0%, #311b92 100%);
+  border-left: 4px solid #9c27b0;
+  color: #e8eaf6;
+}
+
+.markdown-preview-view[data-path*="Налла"] table,
+.markdown-preview-view[data-path*="Сетилат"] table {
+  background: #3f2b96;
+  border: 1px solid #9c27b0;
+}
+
+.markdown-preview-view[data-path*="Налла"] th,
+.markdown-preview-view[data-path*="Сетилат"] th {
+  background: linear-gradient(135deg, #9c27b0 0%, #673ab7 100%);
+}
+
+.markdown-preview-view[data-path*="Налла"] td,
+.markdown-preview-view[data-path*="Сетилат"] td {
+  background: #4a148c;
+  color: #e8eaf6;
+  border-bottom: 1px solid #9c27b0;
+}
+
+/* Дом Хаоса - Зеленоватое оформление */
+.markdown-preview-view[data-path*="Зинкамер"],
+.markdown-preview-view[data-path*="Халшульт"] {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+  color: #e8f5e8;
+}
+
+.markdown-preview-view[data-path*="Зинкамер"] .markdown-preview-sizer,
+.markdown-preview-view[data-path*="Халшульт"] .markdown-preview-sizer {
+  background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+  border: 2px solid #4caf50;
+  box-shadow: 0 15px 50px rgba(76,175,80,0.3);
+}
+
+.markdown-preview-view[data-path*="Зинкамер"] h1,
+.markdown-preview-view[data-path*="Халшульт"] h1 {
+  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  border: 2px solid #2e7d32;
+}
+
+.markdown-preview-view[data-path*="Зинкамер"] h1::before,
+.markdown-preview-view[data-path*="Халшульт"] h1::before {
+  content: "🌪️";
+  color: #ffffff;
+}
+
+.markdown-preview-view[data-path*="Зинкамер"] h2,
+.markdown-preview-view[data-path*="Халшульт"] h2 {
+  background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+  border-left: 4px solid #4caf50;
+  color: #e8f5e8;
+}
+
+.markdown-preview-view[data-path*="Зинкамер"] blockquote,
+.markdown-preview-view[data-path*="Халшульт"] blockquote {
+  background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+  border-left: 4px solid #4caf50;
+  color: #e8f5e8;
+}
+
+.markdown-preview-view[data-path*="Зинкамер"] table,
+.markdown-preview-view[data-path*="Халшульт"] table {
+  background: #2e7d32;
+  border: 1px solid #4caf50;
+}
+
+.markdown-preview-view[data-path*="Зинкамер"] th,
+.markdown-preview-view[data-path*="Халшульт"] th {
+  background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+}
+
+.markdown-preview-view[data-path*="Зинкамер"] td,
+.markdown-preview-view[data-path*="Халшульт"] td {
+  background: #1b5e20;
+  color: #e8f5e8;
+  border-bottom: 1px solid #4caf50;
+}

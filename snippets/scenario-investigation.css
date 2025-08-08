@@ -1,0 +1,22 @@
+.scenario-investigation {
+  background: #1b1f2a;
+  color: #d8dde6;
+  padding: 1.5em;
+  border-radius: 8px;
+  font-family: 'Merriweather', serif;
+}
+.scenario-investigation h1, .scenario-investigation h2, .scenario-investigation h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #ffcc77;
+  text-shadow: 0 0 3px rgba(255,204,119,0.6);
+}
+.scenario-investigation .btn-row { display:flex; gap:0.6em; margin:1em 0; }
+.scenario-investigation .btn {
+  padding:0.4em 0.8em; border:none; border-radius:4px; color:#fff;
+  font-weight:bold; transition:transform .1s, box-shadow .2s;
+  box-shadow:0 2px 6px rgba(0,0,0,0.4); cursor:pointer;
+}
+.scenario-investigation .btn.gold   { background:#daa520; }
+.scenario-investigation .btn.green  { background:#2e8b57; }
+.scenario-investigation .btn.purple { background:#6a5acd; }
+.scenario-investigation .btn:hover  { transform:translateY(-2px); box-shadow:0 4px 12px rgba(0,0,0,0.6); }

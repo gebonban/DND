@@ -1,0 +1,30 @@
+/* =========================================================================== */
+/*  CSS-сниппет для Obsidian: скрывает все inline-поля Dataview в Markdown Preview */
+/* =========================================================================== */
+
+/* 1) Базовый класс Dataview для inline-полей */
+.markdown-preview-view .dataview-inline-field {
+  display: none !important;
+}
+
+/* 2) Иногда Dataview использует span.dv-field или span.dv-inline */
+.markdown-preview-view span.dv-field,
+.markdown-preview-view span.dv-inline {
+  display: none !important;
+}
+
+/* 3) Скрыть элементы с атрибутом data-key (все inline поля) */
+.markdown-preview-view span[data-key] {
+  display: none !important;
+}
+
+/* 4) На всякий случай — скрыть code spans, начинающиеся с ключей puzzle::, type:: и т.д. */
+.markdown-preview-view code {
+  /* Если хотите скрыть все code-блоки в теле, но осторожно — это может затронуть и другие куски */
+  /* display: none !important; */
+}
+
+/* 5) Убрать возможные остатки пустых абзацев после удаления полей */
+.markdown-preview-view p:empty {
+  display: none !important;
+}

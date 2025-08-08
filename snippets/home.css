@@ -1,0 +1,15 @@
+.home {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 16px;
+  padding: 2em;
+}
+
+.home h1, .home h2 {
+  color: #2d3142;
+  font-family: 'Georgia', serif;
+}
+
+.home a {
+  color: #3a86ff;
+  text-decoration: underline;
+}
